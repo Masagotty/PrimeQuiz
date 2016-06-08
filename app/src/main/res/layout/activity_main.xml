@@ -12,5 +12,38 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="0"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        android:textSize="64sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="96dp"
+            android:text="○"
+            android:id="@+id/button"
+            android:layout_weight="1"
+            android:onClick="maru"
+            android:textSize="64sp"
+            android:background="#FF0000"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="96dp"
+            android:text="×"
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:background="#0000FF"
+            android:onClick="batsu"
+            android:textColor="#FFFFFF"
+            android:textSize="64sp" />
+    </LinearLayout>
 </RelativeLayout>
