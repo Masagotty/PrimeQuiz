@@ -48,9 +48,12 @@ public class MainActivity extends AppCompatActivity {
 
             if (number % i == 0) {
                 answer = false;
+                Log.d("number", i +"");
                 break;
             }
         }
+
+        Log.d("answer", answer + "");
 
         if (answer) {
             Toast.makeText(this, "正解", Toast.LENGTH_SHORT).show();
@@ -84,9 +87,12 @@ public class MainActivity extends AppCompatActivity {
 
             if (number % i == 0) {
                 answer = true;
+                Log.d("number", i +"");
                 break;
             }
         }
+
+        Log.d("answer", answer + "");
 
         if (answer) {
             Toast.makeText(this, "正解", Toast.LENGTH_SHORT).show();
